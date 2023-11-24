@@ -54,8 +54,9 @@ class MyHomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Button(name: 'Price range', price: '\$100-\$400', onTap:() => ('Price range'),),
-                SizedBox(width: 15,height: 30,),
-                Padding(padding: EdgeInsets.fromLTRB(20, 100, 20, 100)),
+                SizedBox(width: 30,height: 20),
+                Image.asset('image/saloon.jpeg',width:500,height: 200,fit: BoxFit.cover,),
+                Padding(padding: EdgeInsets.fromLTRB(20, 20, 20, 20)),
                 Button(name: 'Hairstylish', price: '[\$10.99]', onTap: () => ('Hairstylish'),),
                 SizedBox(height: 15.0),
                 Button(name: 'Haircut and Haircolouring', price: '[\$15.99]', onTap:() =>('Haircut and Haircolouring'),),
@@ -73,7 +74,6 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
-
 class Button extends StatelessWidget {
   final String name;
   final String price;
